@@ -132,7 +132,7 @@ def answer(call):
         next_menu2 = types.InlineKeyboardMarkup()
         btn_1 = types.InlineKeyboardButton(text='вернуться в меню', callback_data='trainy_n')
         next_menu2.add(btn_1)
-        res_1 = cursor.execute('SELECT work FROM february WHERE id = 21')
+        res_1 = cursor.execute('SELECT work FROM february WHERE id = 20')
         work = res_1.fetchone()
         msg = work
         bot.send_message(call.message.chat.id, msg, reply_markup=next_menu2)
@@ -141,7 +141,7 @@ def answer(call):
         next_menu2 = types.InlineKeyboardMarkup()
         btn_1 = types.InlineKeyboardButton(text='вернуться в меню', callback_data='trainy_n')
         next_menu2.add(btn_1)
-        res_1 = cursor.execute('SELECT work FROM february WHERE id = 22')
+        res_1 = cursor.execute('SELECT work FROM february WHERE id = 21')
         work = res_1.fetchone()
         msg = work
         bot.send_message(call.message.chat.id, msg, reply_markup=next_menu2)
